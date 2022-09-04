@@ -30,19 +30,6 @@ header {
     width: 95%;
     margin: 0 auto;
 }
-hr {
-    border: 1px solid rgba(255, 193, 120, 1);
-    width: 50px;
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    padding: 0;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 20px;
-    display: inline-flex;
-    align-self: center;
-}
 nav {
     color: white;
     flex-grow: 2;
@@ -224,6 +211,8 @@ h2 {
 }
 button {
     background-color: rgba(255, 163, 67, 1);
+    border: 2px solid;
+    border-radius: 10px;
 }
 .get {
     width: 20%;
@@ -281,7 +270,6 @@ h3 {
     flex-grow: 2;
 }
 .f_list {
-    flex-grow: 3;
     font-size: 19px;
     flex-direction: column;
     display: flex;
@@ -315,4 +303,22 @@ h3 {
     padding: 50px 0;
     justify-content: center;
     display: flex;
+}
+.yellow::before {
+    align-self: center;
+    display: flex;
+    margin-right: 15px;
+    content: "";
+    background-color: rgb(255, 193, 120);
+    width: 70px;
+    height: 2px;
+}
+.after::after {
+    align-self: center;
+    display: flex;
+    margin-left: 15px;
+    content: "";
+    background-color: rgb(255, 193, 120);
+    width: 70px;
+    height: 2px;
 }
